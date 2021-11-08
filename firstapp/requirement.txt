@@ -20,6 +20,7 @@ djongo==1.3.6
 filelock==3.3.1
 Flask==1.1.1
 gast==0.3.3
+requests==2.22.0
 google-pasta==0.1.8
 googletrans==3.1.0a0
 grpcio==1.27.2
@@ -46,13 +47,11 @@ MarkupSafe==1.1.1
 matplotlib==3.1.3
 murmurhash==1.0.5
 mysql-connector-python==8.0.27
-mysqlclient==2.0.3
 numpy==1.18.1
 olefile==0.46
 Pillow==4.0.0
 plac==1.1.3
 platformdirs==2.4.0
-pprint==0.1
 preshed==3.0.5
 protobuf==3.6.0
 pydantic==1.7.4
@@ -63,7 +62,6 @@ python-dateutil==2.8.1
 pyttsx3==2.81
 pytz==2021.3
 PyYAML==5.3
-requests==2.22.0
 rfc3986==1.5.0
 scipy==1.4.1
 six==1.14.0
@@ -86,3 +84,5 @@ Werkzeug==1.0.0
 wrapt==1.12.0
 xlwt==1.3.0
 zipp==3.5.0
+mysqlclient==2.0.3
+pprint==0.1
