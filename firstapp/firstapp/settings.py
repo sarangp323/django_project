@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-w2^e$@+5#c$+#^1b)djfjj+a=6!r%)=8pvgb*o#w0vket&!%sb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-100-26-23-65.compute-1.amazonaws.com']
 
 
 # Application definition
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'firstapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'sp',
+        'NAME': 'lg',
         'USER':'mongo',
         'PASSWORD':'1234',
         'HOST':'localhost',
