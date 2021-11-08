@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<style>
+*{
+    margin : 0;
+    padding :0;
+}
+.container{
+    height : 100vh;
+    width : 100%;
+    background : rgb(187,187,245);
+    color : #fff;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+.card{
+    width : 450px;
+    height : 700px;
+    box-shadow : 0 0 40px 20px rgba(0,0,0,0.26);
+}
+.inner-box{
+    width : 100%;
+    height : 100%;
+    position : relative;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    height : 100%;
+    width : 100%;
+    background-position : center;
+    background-size : cover;
+    background-image : linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)), url({% static 'images/home_slider.jpg' %});
+    padding : 55px;
+    box-sizing : border-box;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    transform : rotateY(180deg);
+    
+}
+.card h1 {
+    font-weight : normal;
+    font-size : 30px;
+    text-align : center;
+    margin-bottom : 20px;
+
+
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+</style>
+
+<body>
+     <div class = "container">
+        <div class='card'>
+            <div class ='inner-box'>
+                <div class='card-front'>
+                    <h1> Sign Up</h1>
+                    <form action='register' method='post' >
+                        {% csrf_token %}
+                        <input type='text' name="first_name" placeholder='First Name'><br>
+                        <input type='text' name="last_name" placeholder='Last Name'><br>
+                        <input type='text' name="username" placeholder='User Name'><br>
+        
+                        <input type='text' name="email" placeholder='Email'><br>
+                        <input type='password' name="password1" placeholder='Password'><br>
+                        <input type='password' name="password2" placeholder='Confirm Password'><br>
+                        <input type='submit'>
+                    </form>
+                    
+                    <div>
+                         {% for message in messages %}
+                             <h3>{{message}}</h3>
+                         {% endfor %}
+                     </div>
+                </div>
+                    
+                <div class='card-back'></div>
+            </div>
+        </div>
+    </div>
+
+                
+
+   
+
+
+
+    
+
+</body>
+
+</html>

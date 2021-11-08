@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\account",
+    "\\assets",
+    "\\assets\\admin",
+    "\\calc",
+    "\\calc\\__pycache__",
+    "\\firstapp",
+    "\\static",
+    "\\template",
+    "\\travello",
+    "\\travello\\migrations"
+  ],
+  "SelectedNode": "\\account\\views.py",
+  "PreviewInSolutionExplorer": false
+}
